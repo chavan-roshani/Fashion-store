@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <style>
+        body { font-family: Arial; margin: 5px; }
+
+        .navbar {
+            background: black;
+            color: rgb(222, 219, 219);
+            padding: 15px;
+            border: 8px;  
+              }
+
+        .container {
+            padding: 15px;
+        }
+
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 15px;
+            border-radius: 10px;
+           border-color:black;
+           color: rgb(1, 0, 0);
+           background-color: rgb(237, 236, 234);
+        }
+
+        button {
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            margin: 20px;
+        }
+
+        .footer {
+            background: black;
+            color:rgb(227, 215, 215);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">Checkout</div>
+
+<div class="container">
+
+    <h2>Enter Details</h2>
+
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="Address">
+    <input type="text" placeholder="Phone Number">
+
+    <button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<div class="footer">© 2026 MyShop</div>
+
+<script>
+function placeOrder() {
+    alert("Order Placed Successfully!");
+    window.location.href = "order.html";
+}
+</script>
+
+</body>
+</html>

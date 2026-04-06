@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories - Roshani's Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #111;
+            padding: 15px 40px;
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .navbar a:hover {
+            color: orange;
+        }
+
+        /* TITLE */
+        .title {
+            text-align: center;
+            margin: 30px;
+            font-size: 28px;
+        }
+
+        /* CATEGORY SECTION */
+        .categories {
+            text-align: center;
+        }
+
+        .category-card {
+            display: inline-block;
+            width: 220px;
+            margin: 20px;
+            padding: 30px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .category-card:hover {
+            background-color: orange;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2>Roshani's Store</h2>
+    <div>
+        <a href="store.html">Home</a>
+        <a href="pr.html">shop</a>
+
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- TITLE -->
+<h2 class="title">Shop By Category</h2>
+
+<!-- CATEGORY CARDS -->
+<div class="categories">
+
+    <div class="category-card" onclick="goToProducts()">
+        Sarees
+    </div>
+
+    <div class="category-card" onclick="goToProducts()">
+        Kurtis
+    </div>
+
+    <div class="category-card" onclick="goToProducts()">
+        Western Wear
+    </div>
+
+    <div class="category-card" onclick="goToProducts()">
+        Accessories
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Roshani's Store</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+    function goToProducts() {
+        window.location.href = "product.html";
+    }
+</script>
+
+</body>
+</html>

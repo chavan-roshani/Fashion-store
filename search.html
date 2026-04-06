@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>search</title>
+    <style>
+        body { font-family: verdana; padding: 30px; }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            font-size: 15px;
+            border: 3px solid #060505;
+            border-radius: 20px;
+            color: #150f56;
+            background-color: antiquewhite;
+
+        }
+
+        .product {
+            margin: 10px 0;
+            border: 3px solid #060505;
+            border-radius: 20px;
+            padding: 10px;
+            width: 80%;
+            color: rgb(22, 30, 88);
+             background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Search Products</h2>
+
+<input type="text" id="searchBox" onkeyup="searchProduct()" placeholder="Search...">
+
+<div id="results">
+    <div class="product">Shoes</div>
+    <div class="product">Clothes</div>
+    <div class="product">Electronics</div>
+</div>
+
+<script>
+function searchProduct() {
+    let input = document.getElementById("searchBox").value.toLowerCase();
+    let items = document.querySelectorAll(".product");
+
+    items.forEach(item => {
+        if (item.innerText.toLowerCase().includes(input)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

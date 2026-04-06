@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product View</title>
+    <style>
+        body { font-family: Arial; margin: 0; }
+
+        .navbar {
+            background: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        img {
+            width: 300px;
+        }
+
+        .btn {
+            background: green;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">Product Details</div>
+
+<div class="container">
+
+    <img src="C:\Users\AgastiTech\Desktop\images\kurti.jpg">
+
+    <div>
+        <h2>Beautiful Kurti</h2>
+        <p>Price: ₹800</p>
+        <p>Description: Comfortable and stylish kurti.</p>
+        <p>Rating: ⭐⭐⭐⭐</p>
+
+        <button class="btn" onclick="addToCart()">Add to Cart</button>
+
+        <h3>Related Products</h3>
+        <p>Saree | Top | Shirt</p>
+    </div>
+
+</div>
+
+<script>
+function addToCart() {
+    alert("Added to Cart!");
+}
+</script>
+
+</body>
+</html>
